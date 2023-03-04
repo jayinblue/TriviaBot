@@ -41,6 +41,14 @@ client.on(Events.InteractionCreate, async interaction => {
 		return;
 	}
 
+  if (!interaction.isButton()) return;
+	console.log(interaction);
+
+  /*if (interaction.isButton()) {
+    interaction.reply("you clicked" + interaction.customId);
+        console.log(interaction);
+  }*/
+  
 	try {
 		await command.execute(interaction);
 	} catch (error) {
