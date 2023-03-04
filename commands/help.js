@@ -3,7 +3,7 @@ const { EmbedBuilder, SlashCommandBuilder } = require('discord.js');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('help')
-		.setDescription('Lists all of the commands Cordelia has!'),
+		.setDescription('Lists all of the commands TriviaBot has!'),
 	async execute(interaction) {
 		const helpEmbed = new EmbedBuilder()
 			.setColor('Aqua')
